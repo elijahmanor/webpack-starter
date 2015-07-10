@@ -53,8 +53,6 @@ var config = {
   plugins: [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.CommonsChunkPlugin({name: 'vendors', minChunks: Infinity}),
-    // new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
-    new webpack.optimize.CommonsChunkPlugin('common', 'common.js', 2),
     new ExtractTextPlugin('[name].css')
   ]
 };
