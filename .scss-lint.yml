@@ -1,0 +1,242 @@
+# Default application configuration that all configurations inherit from.
+linters:
+  BorderZero:
+    enabled: true
+
+  CapitalizationInSelector:
+    enabled: false
+
+  ColorKeyword:
+    enabled: false
+
+  Comment:
+    enabled: false
+
+  DebugStatement:
+    enabled: true
+
+  DeclarationOrder:
+    enabled: true
+
+  DuplicateProperty:
+    enabled: false
+
+  EmptyLineBetweenBlocks:
+    enabled: true
+
+  EmptyRule:
+    enabled: true
+
+  FinalNewline:
+    enabled: true
+    present: true
+
+  HexLength:
+    enabled: true
+    style: short
+
+  HexNotation:
+    enabled: true
+    style: lowercase
+
+  HexValidation:
+    enabled: true
+
+  IdWithExtraneousSelector:
+    enabled: false
+
+  Indentation:
+    enabled: true
+    width: 2
+
+  LeadingZero:
+    enabled: true
+    style: include_zero
+
+  MergeableSelector:
+    enabled: true
+    force_nesting: true
+
+  NameFormat:
+    enabled: true
+    convention: ^(?:[a-z][A-Za-z]+-)?(?:[A-Za-z]+)(?:[-_]{1,2}[a-z][A-Za-z\d]+)*$
+    # e.g. camelCase, namespace-PascalCase, Block-element--modifier, color--blue, ui-text--uppercase
+
+  PlaceholderInExtend:
+    enabled: true
+
+  PropertySortOrder:
+    enabled: true
+    order:
+      # Generated Content
+      - content
+      - counter-increment
+      - counter-reset
+      - quotes
+      # Cursor and Pointer Events
+      - cursor
+      - pointer-events
+      # Table Properties
+      - table-layout
+      - border-collapse
+      - border-spacing
+      - empty-cells
+      - caption-side
+      # List Properties
+      - list-style
+      - list-style-type
+      - list-style-position
+      - list-style-image
+      # Layout Properties
+      - display
+      - position
+      - float
+      - clear
+      - overflow
+      - clip
+      - visibility
+      - top
+      - right
+      - bottom
+      - left
+      - z-index
+      - zoom
+      # Box Properties
+      - margin
+      - margin-top
+      - margin-right
+      - margin-bottom
+      - margin-left
+      - min-width
+      - width
+      - max-width
+      - min-height
+      - height
+      - max-height
+      - padding
+      - padding-top
+      - padding-right
+      - padding-bottom
+      - padding-left
+      - border
+      - border-width
+      - border-style
+      - border-color
+      - border-top
+      - border-top-width
+      - border-top-style
+      - border-top-color
+      - border-right
+      - border-right-width
+      - border-right-style
+      - border-right-color
+      - border-bottom
+      - border-bottom-width
+      - border-bottom-style
+      - border-bottom-color
+      - border-left
+      - border-left-width
+      - border-left-style
+      - border-left-color
+      - border-radius
+      - outline
+      - outline-width
+      - outline-style
+      - outline-color
+      - box-shadow
+      # Colors & Backgrounds
+      - background
+      - background-color
+      - background-image
+      - background-repeat
+      - background-attachment
+      - background-position
+      - background-size
+      - color
+      - opacity
+      # Typography
+      - direction
+      - unicode-bidi
+      - whitespace
+      - font
+      - font-style
+      - font-variant
+      - font-weight
+      - font-size
+      - font-size-adjust
+      - line-height
+      - font-family
+      - text-align
+      - text-decoration
+      - text-indent
+      - text-transform
+      - text-shadow
+      - vertical-align
+      - word-spacing
+      - letter-spacing
+
+  PropertySpelling:
+    enabled: true
+    extra_properties: []
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 3
+
+  SelectorFormat:
+    enabled: true
+    convention: ^(?:[a-z][A-Za-z]+-)?(?:[A-Za-z]+)(?:[-_]{1,2}[a-z][A-Za-z\d]+)*$
+    # e.g. camelCase, namespace-PascalCase, Block-element--modifier, color--blue
+    ignored_types: [attribute, element, id, pseudo-selector]
+
+  Shorthand:
+    enabled: true
+
+  SingleLinePerProperty:
+    enabled: true
+    allow_single_line_rule_sets: false
+
+  SingleLinePerSelector:
+    enabled: true
+
+  SpaceAfterComma:
+    enabled: true
+
+  SpaceAfterPropertyColon:
+    enabled: true
+
+  SpaceAfterPropertyName:
+    enabled: true
+
+  SpaceBeforeBrace:
+    enabled: true
+    allow_single_line_padding: false
+
+  SpaceBetweenParens:
+    enabled: true
+
+  StringQuotes:
+    enabled: true
+    style: double_quotes
+
+  TrailingSemicolon:
+    enabled: true
+
+  TrailingZero:
+    enabled: true
+
+  UnnecessaryMantissa:
+    enabled: true
+
+  UnnecessaryParentReference:
+    enabled: true
+
+  UrlFormat:
+    enabled: false
+    # TODO: Maybe reconsider, but CDN
+
+  UrlQuotes:
+    enabled: true
+
+  ZeroUnit:
+    enabled: true
